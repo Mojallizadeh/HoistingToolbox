@@ -1,0 +1,55 @@
+clc;clear;close all;
+
+w=[0.05 0.06 0.07 0.08 0.09 0.1 0.2 0.3 0.4 0.5];
+
+L2_1=[14.35 , 17.24 , 20.14 , 23.01 , 25.88  , 28.73 , 57.51 , 86.22 , 115.00 , 143.74];
+L2_2=[13.94 , 16.87 , 19.81 , 22.67 , 25.41  , 28.11 , 56.48 , 84.44 , 112.88 , 140.85];
+L2_3=[13.50 , 16.45 , 19.45 , 22.30 , 24.93  , 27.45 , 55.35 , 82.56 , 110.57 , 137.75];
+L2_4=[0.33  , 0.44  , 0.55  , 0.61  , 0.70   , 0.82  , 1.64  , 2.34  , 2.92   , 3.38];
+L2_5=[0.09  , 0.12  , 0.15  , 0.18  , 0.23   , 0.27  , 0.84  , 1.54  , 2.57   , 3.75];
+L2_6=[0.33  , 0.45  , 0.56  , 0.62  , 0.71   , 0.83  , 1.66  , 2.36  , 2.93   , 3.39];
+L2_7=[0.09  , 0.12  , 0.14  , 0.18  , 0.22   , 0.26  , 0.91  , 2.00  , 3.35   , 5.04];
+L2_8=[0.12  , 0.14  , 0.16  , 0.19  , 0.21   , 0.23  , 0.49  , 0.85  , 1.26   , 1.63];
+L2_9=[0.09  , 0.12  , 0.14  , 0.18  , 0.22   , 0.26  , 0.92  , 2.03  , 3.45   , 5.21];
+L2_10=[0.09 , 0.12  , 0.14  , 0.18  , 0.22   , 0.25  , 0.91  , 2.03  , 3.46   , 5.25];
+L2_11=[0.09 , 0.12  , 0.14  , 0.18  , 0.22   , 0.25  , 0.91  , 2.03  , 3.46   , 5.25];
+L2_12=[0.09 , 0.12  , 0.14  , 0.18  , 0.22   , 0.26  , 0.91  , 2.00  , 3.35   , 5.02];
+L2_13=[0.09 , 0.12  , 0.14  , 0.18  , 0.22   , 0.26  , 0.91  , 1.99  , 3.35   , 5.04];
+L2_14=[1.14 , 8.24  , 6.56  , 5.98  , 8.35   , 2.70  , 3.34  , 5.64  , 10.67  , 50.64];
+L2_15=[1.07 , 2.88  , 4.83  , 3.03  , 3.24   , 7.71  , 2.62  , 6.18  , 6.61   , 4.33];
+L2_16=[2.13 , 2.38  , 2.61  , 3.12  , 2.52   , 1.30  , 2.70  , 5.74  , 4.77   , 5.31];
+L2_17=[0.19 , 0.27  , 0.33  , 0.42  , 0.54   , 0.65  , 1.81  , 2.52  , 3.05   , 3.45];
+L2_18=[0.22 , 0.27  , 0.31  , 0.36  , 0.40   , 0.45  , 0.96  , 1.39  , 1.74   , 2.14];
+L2_19=[0.16 , 0.19  , 0.22  , 0.25  , 0.29   , 0.32  , 0.67  , 1.10  , 1.43   , 1.72];
+
+
+plot(w,L2_1,'--','LineWidth',2)
+hold on
+plot(w,L2_2,'--','LineWidth',2)
+plot(w,L2_3,'--','LineWidth',2)
+plot(w,L2_4,'--','LineWidth',2)
+plot(w,L2_5,'--','LineWidth',2)
+plot(w,L2_6,'--','LineWidth',2)
+plot(w,L2_7,'--','LineWidth',2)
+plot(w,L2_8,'-','LineWidth',2)
+plot(w,L2_9,'--','LineWidth',2)
+plot(w,L2_10,'--','LineWidth',2)
+plot(w,L2_11,'--','LineWidth',2)
+plot(w,L2_12,'--','LineWidth',2)
+plot(w,L2_13,'--','LineWidth',2)
+plot(w,L2_14,'--','LineWidth',2)
+plot(w,L2_15,'--','LineWidth',2)
+plot(w,L2_16,'--','LineWidth',2)
+plot(w,L2_17,'--','LineWidth',2)
+plot(w,L2_18,'-','LineWidth',2)
+plot(w,L2_19,'-','LineWidth',2)
+grid on
+xlabel('$\omega$ (rad/s)','Interpreter','latex','FontSize',18)
+ylabel('$\tilde{L}_2(e_p)$','Interpreter','latex','FontSize',18)
+
+legend('unshaped input','ZV','ZVD','Collocated PD regulation','Quasi-PID','Noncollocated PD regulation (first angle)'...
+    ,'Noncollocated PD regulation (last angle)','Collocated PD tracking','PD-PD','Explicit single-pendulum SMC (first angle)'...
+    ,'Implicit single-pendulum SMC (first angle)','Explicit single-pendulum SMC (last angle)','Implicit single-pendulum SMC (last angle)','Explicit double-pendulum SMC',...
+    'Implicit double-pendulum SMC','PD energy (first angle)','PD energy (last angle)','Coupling tracking (first angle)','Coupling tracking (last angle)','FontSize',18)
+
+ set(gca,'FontSize',14)

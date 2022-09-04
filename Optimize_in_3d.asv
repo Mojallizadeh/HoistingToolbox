@@ -1,0 +1,17 @@
+clear; close all; clc
+parameters
+load parameters_file
+%================ general parameters ================
+MaxStallTime=1*60*60;
+MaxTime=4*60*60;
+Aeq=[];
+beq=[];
+A=[];
+b=[];
+nonlcon=[];
+
+
+
+[cont_param_4_pso,fval_4_pso,exitflag_4_pso,output_4_pso] = particleswarm(fun,5,[0 0 0 0 0],[],options_pso)
+
+optimize_19_coupling_tracking_last
