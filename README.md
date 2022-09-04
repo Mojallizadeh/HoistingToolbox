@@ -3,7 +3,7 @@ Useful functions in MATLAB environments for design and analysis of the controlle
 
 If you use this toolbox please cite the following report:
 
-Mohammad Rasool Mojallizadeh, Bernard Brogliato, Christophe Prieur. Comparison of Control Methods for 2D Industrial Cranes. 2022.
+Mohammad Rasool Mojallizadeh, Bernard Brogliato, Christophe Prieur. Comparison of Control Methods for 2D Industrial Cranes. IEEE CCTA 2022, Trieste, Italy 2022.
 
 Copyright 2022 INRIA.
 
