@@ -1,4 +1,5 @@
 # HoistingToolbox
+
 Useful functions in MATLAB environments for design and analysis of the controllers developed for overhead cranes.
 
 If you use this toolbox please cite the following report:
@@ -7,7 +8,7 @@ Mohammad Rasool Mojallizadeh, Bernard Brogliato, Christophe Prieur. Comparison o
 
 Copyright 2022 INRIA.
 
-This program (the differentiation toolbox) is free software:
+This program (the Hoisting toolbox) is free software:
 you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
