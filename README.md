@@ -2,9 +2,11 @@
 
 Useful functions in MATLAB environments for design and analysis of the controllers developed for overhead cranes.
 
-If you use this toolbox please cite the following report:
+If you use this toolbox please cite the following papers:
 
-Mohammad Rasool Mojallizadeh, Bernard Brogliato, Christophe Prieur. Comparison of Control Methods for 2D Industrial Cranes. IEEE CCTA 2022, Trieste, Italy 2022.
+[1] Mohammad Rasool Mojallizadeh, Bernard Brogliato, Christophe Prieur. Comparison of Control Methods for 2D Industrial Cranes. IEEE CCTA 2022, Trieste, Italy 2022.
+
+[2] Mojallizadeh, Mohammad Rasool, Bernard Brogliato, and Christophe Prieur. "Modeling and control of overhead cranes: a tutorial overview and perspectives." Annual Reviews in Control, Volume 56, 2023, 100877 (2023).
 
 Copyright 2022 INRIA.
 
