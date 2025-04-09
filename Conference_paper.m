@@ -2,7 +2,7 @@ clc;clear;close all;
 
 %% Simulation parameters
 h=1e-5; % Sampling time
-tf=40; % Final time
+tf=20; % Final time
 len=floor(tf/h); % vector lengths
 
 g=9.8;
@@ -170,3 +170,17 @@ ylabel('$u_{s}$','Interpreter','latex','FontSize',28)
 set(gca,'xtick',[])
 set(gca,'FontSize',28)
 grid on
+
+
+norm_x1_deadbeat=norm(x1,2)
+norm_x2_deadbeat=norm(x2,2)
+norm_x3_deadbeat=norm(x3,2)
+norm_x4_deadbeat=norm(x4,2)
+norm_u_deadbeat=norm(u,2)
+
+
+norm_x1_deadbeat_e=norm(x1_e,2)
+norm_x2_deadbeat_e=norm(x2_e,2)
+norm_x3_deadbeat_e=norm(x3_e,2)
+norm_x4_deadbeat_e=norm(x4_e,2)
+norm_u_deadbeat_e=norm(u_e,2)
